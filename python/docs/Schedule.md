@@ -1,0 +1,32 @@
+# Schedule
+
+Schedule Entity
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**project_object_id** | **int** | The unique identifier of the project. | [optional] 
+**new_data_date** | **datetime** | The new data date. | [optional] 
+**timeout** | **int** | The amount of time in seconds that the server side will wait for the job service to complete before it returns with the current job status. The Timeout parameter is optional. When you use this operation without specifying a Timeout parameter or with a Timeout of 0, the server immediately returns without waiting for the job service to complete. | [optional] 
+
+## Example
+
+```python
+from openapi_client.models.schedule import Schedule
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of Schedule from a JSON string
+schedule_instance = Schedule.from_json(json)
+# print the JSON string representation of the object
+print(Schedule.to_json())
+
+# convert the object into a dict
+schedule_dict = schedule_instance.to_dict()
+# create an instance of Schedule from a dict
+schedule_from_dict = Schedule.from_dict(schedule_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
